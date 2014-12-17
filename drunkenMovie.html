@@ -1,0 +1,30 @@
+<html>
+  <meta charset="utf-8">
+  <head>
+    <title>Drunken Movie Machine</title>
+    <link rel="stylesheet" href="css/drunkenMovie.css">
+  </head>
+  <body>
+    <div id="stage">
+      <h1>Drunken Movie Machine</h1>
+      <p id="about">Got a lot of movies and feeling indecisive?
+        <br>Make a list and let the wise computer choose for you.</p>
+      <div id="formBox">
+        <input type="text" id="movieInputBox" autofocus="true">
+        <button id="add">Add Movie</button>
+      </div>
+      <p id="error">Please input a valid movie title.<br>
+        <em>(Not a previously entered title or blank)</em>
+      </p>
+      <div id="listBlock">
+        <h3>No movies in your list... :(</h3>
+        <ul>
+        </ul>
+      </div>
+      <h2 id="chosenMovie">Hidden</h2>
+      <button id="picker">Pick a Movie for Me!</button>
+    </div>
+    <button id="reset">Reset</button>
+    <script src="drunkenMovie.js"></script>
+  </body>
+</html>

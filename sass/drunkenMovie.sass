@@ -1,0 +1,131 @@
+@import normalize.css
+
+$font-stack: 'Helvetica Neue', helvetica, sans-serif
+$blue: #00afec
+$red: #ea148c
+$grey: #4a4747
+$lightgrey: lighten($grey, 10%)
+$green: #3fb34f
+$white: #e1dddd
+
+body
+  font-family: $font-stack
+  background-color: $grey
+  color: $white
+  text-align: center
+  
+h1
+  color: $white
+  margin: 0
+  background-color: $blue
+  width: 100%
+  padding: .3em 0
+  text-transform: uppercase
+  letter-spacing: 1em
+  font-weight: normal
+
+h3
+  background: inherit
+  transition: color 1s
+
+#about
+  font-size: 0.9em
+  color: $white
+  background: $green
+  margin: 0
+  padding: 1em
+
+#stage
+  position: relative
+  min-width: 300px
+  max-width: 100%
+  margin: 0 auto
+  background: #333
+  padding: 0
+  border: 1em solid $blue
+
+#error
+  display: none
+  position: absolute
+  width: 50%
+  top: 40%
+  left: 23%
+  height: 0%
+  opacity: 0
+  color: white
+  background-color: rgba(0, 200, 255, 0.75)
+  font-weight: bold
+  padding: 1em
+  border-radius: 1em
+  transition: opacity 1s, height 1s
+  cursor: pointer
+
+// Input field and resulting list
+#listBlock
+  width: 100%
+
+#movieInputBox
+  background-color: $white
+  width: 100%
+  color: $red
+  border: none
+  margin: 0
+  padding: 0.5em
+  font-size: 1.5em
+  text-align: center
+
+
+#listBlock ul
+  margin: 0
+  padding: 0
+  width: 100%
+
+#listBlock ul li
+  list-style-type: none
+  padding: 0.5em
+  text-transform: uppercase
+  font-size: 1.3em
+  font-weight: bold
+
+#listBlock ul li:nth-child(odd)
+  background: $grey
+#listBlock ul li:nth-child(even)
+  background: $lightgrey
+
+
+
+
+#chosenMovie
+  opacity: 0
+  transition: all 1s ease 1s
+  color: $red
+
+button#add
+  display: none
+
+button
+  text-transform: capitalize
+
+button#picker
+  width: 100%
+  color: $white
+  background: $red
+  border: none
+  cursor: pointer
+  margin: 0em auto
+  padding: 1em
+  font-weight: bold
+  font-size: 1.2em
+
+button#picker:hover
+  color: $grey
+
+button#reset
+  font-size: 0.6em
+  color: $red
+  background: $lightgrey
+  border: none
+  width: 100%
+
+button#reset:hover
+  background: $grey
